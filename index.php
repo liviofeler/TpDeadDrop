@@ -16,7 +16,7 @@
 			return (new Date().getTime() + Math.floor((Math.random()*10000)+1)).toString(16);
 			};
 			var sjcl = require('./sjcl'); 
-			console.log(sjcl.encrypt(uniquid, message); 
+			console.log(sjcl.encrypt(uniquid, message)); 
 	</script>
 <html/>
 
