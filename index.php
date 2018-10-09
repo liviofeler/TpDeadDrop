@@ -22,6 +22,7 @@
 
 
 <?php
+
 		//Cas A
 		if(isset($_POST['submit']))
 		{
