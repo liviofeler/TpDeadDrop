@@ -11,4 +11,9 @@
 		</form>
 <html/>
 <?php
+		if(isset($_POST['submit']))
+		{
+			$id = uniqid();
+			echo $id;
+		}
 ?>
