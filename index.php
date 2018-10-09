@@ -1,22 +1,24 @@
 <html>
 	<head>
-		<script src="sjcl/core/aes.js"></script>
+		<script type="text/javascript" src="sjcl/sjcl.js"></script>
+		
 	</head>
 	<body>
 		<form method="Post" action="index.php">
 			<p>
 				<label for="message">Message</label>
-				<input type="textarea" name="message"/>
+				<input type="textarea" id="textarea.message" name="message"/>
 				<br />
 			</p>
 			<input type="submit" value="Envoyer" name="submit"/>
 		</form>
 	<script> 
+			var message;
+			document.getElementById('textarea.message').innerHTML = message;
 			var uniqid = function() {
 			return (new Date().getTime() + Math.floor((Math.random()*10000)+1)).toString(16);
 			};
-			var sjcl = require('./sjcl'); 
-			console.log(sjcl.encrypt(uniquid, message)); 
+			console.log(sjcl.encrypt(uniqid, message)); 
 	</script>
 <html/>
 
